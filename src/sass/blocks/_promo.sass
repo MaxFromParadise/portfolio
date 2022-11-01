@@ -1,9 +1,8 @@
 .promo
     min-height: 100vh
-    background: url(../img/main_bg.jpg) center (center/cover) no-repeat
+    background: url(../img/main_bg_girl.jpg) center (center/cover) no-repeat
     position: relative
     padding-top: 206px
-    z-index: -2
     &__content
         max-width: 532px
     &_title
@@ -11,7 +10,6 @@
     &__btns
         margin-top: 25px
         display: flex
-        justify-content: start
         align-items: center
     &__btn
         margin-left: 44px
@@ -23,5 +21,10 @@
             color: #000
     .white
         color: #fff
+    &__subtitle
+        z-index: 2
+        position: relative
+        padding-left: 10px
+        @include circle
 
 
