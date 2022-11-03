@@ -1,0 +1,77 @@
+.navbar
+    position: fixed
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100vh
+    z-index: 20
+    visibility: hidden
+    opacity: 0
+    transition: all .5s
+    &.active
+        left: 0
+        visibility: visible
+        opacity: 1
+    &__overlay
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(255, 255, 255, .5)
+        z-index: 15
+    &__menu
+        position: relative
+        width: 345px
+        height: 100vh
+        background-color: $main-color
+        padding: 140px 0 50px 40px
+        //left: -100%
+        transition: all .5s
+        z-index: 16
+    &__close
+        position: absolute
+        top: 25px
+        right: 25px
+        cursor: pointer
+    &__list
+        list-style-type: none
+        li
+            margin-bottom: 15px
+            position: relative
+            transition: all .4s
+            &:before
+                content: ""
+                width: 15px
+                height: 15px
+                position: absolute
+                border-radius: 100%
+                border: 1px solid #000000
+                left: -35px
+                top: 50%
+                transform: translateY(-50%)
+                transition: all .4s
+            &:hover
+                opacity: .7
+                &:before
+                    background: #009bed
+            
+            a
+                font-weight: 700
+                font-size: 24px
+                line-height: 36px
+                color: #FFFFFF
+                text-decoration: none
+    &__social
+        position: absolute
+        bottom: 50px
+        left:50%
+        transform: translateX(-50%)
+        width: 90px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-item
+            img
+                width: 20px
+                height: 20px
