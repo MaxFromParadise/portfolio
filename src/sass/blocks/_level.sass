@@ -1,0 +1,32 @@
+.level
+    padding-top: 120px
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(3, 350px)
+        column-gap: 45px
+        row-gap: 30px
+    &__item
+        width: 350px
+        height: 70px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &-progress
+            &_bar
+                width: 350px
+                height: 14px
+                border-radius: 4px
+                background: #E8E4DE
+            &_full
+                height: 14px
+                background-color: $main-color
+                border-radius: 4px
+        &-header
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &_percentage
+                font-weight: 500
+                font-size: 14px
+                line-height: 21px
+                color: #000000
