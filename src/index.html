@@ -81,7 +81,7 @@
     <section class="experience">
         <div class="container">
             <div class="experience__text">
-                <h2 class="title title_fz16 experience__subtitle">Опыт</h2>
+                <h2 class="title title_fz16 title__section-title">Опыт</h2>
                 <div class="title">Чем я буду полезен</div>
                 <div class="about__divider"></div>
             </div>
@@ -134,7 +134,7 @@
     <section class="skills">
         <div class="container">
             <div class="experience__text">
-                <h2 class="title title_fz16 experience__subtitle">Навыки</h2>
+                <h2 class="title title_fz16 title__section-title">Навыки</h2>
                 <div class="title">Что я использую в работе</div>
                 <div class="about__divider"></div>
             </div>
@@ -172,7 +172,7 @@
                     </div>
                     <div class="level__item-footer">
                         <div class="level__item-progress_bar">
-                            <div class="level__item-progress_full" style="width: 100%;"></div>
+                            <div class="level__item-progress_full"></div>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                     </div>
                     <div class="level__item-footer">
                         <div class="level__item-progress_bar">
-                            <div class="level__item-progress_full" style="width: 78%;"></div>
+                            <div class="level__item-progress_full"></div>
                         </div>
                     </div>
                 </div>
@@ -194,21 +194,91 @@
                     </div>
                     <div class="level__item-footer">
                         <div class="level__item-progress_bar">
-                            <div class="level__item-progress_full" style="width: 82%;"></div>
+                            <div class="level__item-progress_full"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+    <section class="portfolio">
+        <div class="container">
+            <div class="experience__text">
+                <h2 class="title title_fz16 title__section-title">Портфолио</h2>
+                <div class="title">Мои работы</div>
+                <div class="about__divider"></div>
+            </div>
+            <div class="portfolio__wrapper">
+                <a href="/uber" target="_blank" class="portfolio__item">
+                    <img src="img/uber.jpg" alt="uber">
+                </a>
+                <a href="/runsmart" target="_blank" class="portfolio__item">
+                    <img src="img/runsmart.jpg" alt="runsmart">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/bread.jpg" alt="bread">
+                </a>
+                <a href="#" id="plans" class="portfolio__item">
+                    <img src="img/plans.jpg" alt="plans">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/ipad.jpg" alt="ipad">
+                </a>
+                <a href="#" id="mac" class="portfolio__item">
+                    <img src="img/mac.jpg" alt="mac">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__img">
+                    <img src="img/about6.jpg" alt="photo">
+                </div>
+                <div class="contacts__descr">
+                    <h2 class="title title_fz16 contacts__subtitle">Контакты</h2>
+                    <div class="title">Свяжитесь со мной</div>
+                    <div class="about__divider"></div>
+                    <div class="title title_fz14 contacts__text">Любым удобным для вас способом:</div>
+                    <div class="contacts__social">
+                        <a href="https://www.facebook.com/profile.php?id=100087177829925" target="_blank" class="contacts__link"><img src="icons/facebook.svg" alt="facebook"></a>
+                        <a href="https://t.me/maxFromParadise" target="_blank" class="contacts__link"><img src="icons/telegram.svg" alt="telegram"></a>
+                        <a href="https://www.instagram.com/maxdemented/" target="_blank" class="contacts__link"><img src="icons/instagram.svg" alt="instagram"></a>
+                        <a href="https://vk.com/maxdemented" target="_blank" class="contacts__link"><img src="icons/vk.svg" alt="vkontakte"></a>
+                    </div>
+                    <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сам вам напишу:</div>
+                    <form action="#" class="contacts__form" id="contacts-form">
+                        <div class="contacts__input">
+                            <input placeholder="Иван" name="name" id="name" type="text">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input placeholder="example@mail.ru" name="email" id="email" type="email">
+                            <label for="email">Ваша почта</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button type="submit" class="button contacts__btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
-
-
-
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
