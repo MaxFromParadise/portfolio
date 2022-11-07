@@ -14,35 +14,9 @@ counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
 
-
 $(document).ready(function(){
-    function modalValidate(classValid){
-        $(classValid).validate({
-            rules: {
-                name: "required",
-                email: {
-                    required: true,
-                    email: true
-                },
-                text: "required",
-                onfocusout: true
-            },
-            messages: {
-                name: "Введите своё имя",
-                email: {
-                  required: "После с email должно быть заполнено!",
-                  email: "Ваш email должен быть в формате name@domain.com!"
-                },
-                text: "Введите сообщение"
-            }
-        });
-    };
-    modalValidate("#contacts-form");
     $("form").submit(function(e){
         e.preventDefault();
-        if (!$(this).valid()) {
-            return;
-        }
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
