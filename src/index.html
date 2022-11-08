@@ -17,11 +17,11 @@
                 </svg>
             </div>
             <ul class="navbar__list">
-                <li class="navbar_list-item"><a href="#">ПРО МЕНЯ</a></li>
-                <li class="navbar_list-item"><a href="#">МОЙ ОПЫТ</a></li>
-                <li class="navbar_list-item"><a href="#">МОИ НАВЫКИ</a></li>
-                <li class="navbar_list-item"><a href="#">МОИ РАБОТЫ</a></li>
-                <li class="navbar_list-item"><a href="#">КОНТАКТЫ</a></li>
+                <li class="navbar_list-item"><a href="#about">ПРО МЕНЯ</a></li>
+                <li class="navbar_list-item"><a href="#experience">МОЙ ОПЫТ</a></li>
+                <li class="navbar_list-item"><a href="#skills">МОИ НАВЫКИ</a></li>
+                <li class="navbar_list-item"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                <li class="navbar_list-item"><a href="#contacts">КОНТАКТЫ</a></li>
             </ul>
             <div class="navbar__social">
                 <a href="https://github.com/MaxFromParadise" target="_blank" class="navbar__social-item"><img src="icons/github.svg" alt="github"></a>
@@ -51,14 +51,14 @@
                 <div class="title title_fz16 promo__subtitle">Меня зовут Максим Польянов</div>
                 <h1 class="title title_fz48 promo_title">Я web-разработчик из города Омска</h1>
                 <div class="promo__btns">
-                    <a href="#" class="button">Портфолио</a>
-                    <a href="#" class="promo__btn">Про меня</a>
+                    <a href="#portfolio" class="button">Портфолио</a>
+                    <a href="#about" class="promo__btn">Про меня</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="about__wrapper">
                 <img src="img/about6.jpg" alt="photo" class="about__photo">
@@ -83,7 +83,7 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section id="experience" class="experience">
         <div class="container">
             <div class="experience__text">
                 <h2 class="title title_fz16 title__section-title">Опыт</h2>
@@ -137,7 +137,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="container">
             <div class="experience__text">
                 <h2 class="title title_fz16 title__section-title">Навыки</h2>
@@ -209,7 +209,7 @@
         </div>
     </div>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="experience__text">
                 <h2 class="title title_fz16 title__section-title">Портфолио</h2>
@@ -239,7 +239,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__img">
@@ -274,7 +274,7 @@
                             <button type="submit" class="button contacts__btn">Отправить сообщение</button>
                             <div class="contacts__policy">
                                 <input required type="checkbox">
-                                <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                                <span>Я согласен(а) с <a target="_blank" href="/privacy">политикой конфиденциальности</a></span>
                             </div>
                         </div>
                     </form>
@@ -283,7 +283,6 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
